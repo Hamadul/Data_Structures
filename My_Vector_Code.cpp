@@ -57,25 +57,11 @@ class my_vector{
 int main() 
 {
     my_vector<int> list;
-    list.push_back(1);
-    list.push_back(2);
-    list.push_back(3);
-    list.push_back(4);
-    list.push_back(5);
-    list.push_back(6);
-    list.push_back(7);
-    list.push_back(8);
-    list.push_back(9);
-    list.push_back(10);
-    list.push_back(11);
-    list.push_back(12);
+    for (int i=0; i<12; i++)
+      list.push_back(i+1);
     list.display_list();
-    cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
-    cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
-    cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
-    cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
-    cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
-    cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
+    for (int j=0; j<8; j++)
+      cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
     list.display_list();
     return 0;
 }
