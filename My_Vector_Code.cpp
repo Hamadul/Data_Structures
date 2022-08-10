@@ -3,7 +3,6 @@ using namespace std;
 
 template<class T>
 class my_vector{
-  T data;
   int size;
   int capacity;
   T* arr;
@@ -57,11 +56,13 @@ class my_vector{
 int main() 
 {
     my_vector<int> list;
-    for (int i=0; i<12; i++)
+    for (int i=0; i<8; i++){
       list.push_back(i+1);
-    list.display_list();
-    for (int j=0; j<8; j++)
+      list.display_list();
+    }
+    for (int j=0; j<=4; j++){
       cout<<"Extracted\t"<<list.pop_back()<<"\tfrom list"<<endl;
-    list.display_list();
+      list.display_list();
+    }
     return 0;
 }
